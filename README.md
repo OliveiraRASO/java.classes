@@ -5,3 +5,6 @@
  -squareroots;
  
  much more...
+ 
+ // update 20/04/2020
+ more .classes added
