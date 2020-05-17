@@ -13,8 +13,7 @@ public class PalindromoCharArray {
         
         System.out.println("Digite algo p/ comparar: ");
         
-        String palindromo = leia.nextLine()
-                ;
+        String palindromo = leia.nextLine();
         int len = palindromo.length();
         char[] tempCharArray = new char[len];
         char[] charArray = new char[len];
