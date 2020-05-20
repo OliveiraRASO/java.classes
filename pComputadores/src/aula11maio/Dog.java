@@ -5,6 +5,10 @@ package aula11maio;
 
 public class Dog {
 
+    //
+    //variavel de classe
+    private static int dogCounter = 0;
+    
     // variáveis de instância
     private String breed;
     private String size;
@@ -16,12 +20,14 @@ public class Dog {
         breed = "";
         size = "";
         age = 0;
+        dogCounter++;
     }
     public Dog(String breed, String size, int age, String color) {
         this.breed = breed;
         this.size = size;
         this.age = age;
         this.color = color;
+        dogCounter++;
     }
     
     // métodos de acesso
@@ -56,10 +62,21 @@ public class Dog {
         return "" + breed + ", " + size + " ," + age + " ," + color;
     }
     
+    //
+    //metodo verifica mesma raça
+    public boolean sameBreed(Dog d){
+        return breed.equals(d.breed);
+    }
+    
+    public static int getdogCounter(){
+        return dogCounter;
+    }
+    
     public void print(){
         System.out.println("Breed: " + breed );
         System.out.println("Size : " + size  );
-        System.out.println("Age  : " + age   );       
-        System.out.println("Color: " + color );    
+        System.out.println("Age  : " + age   );
+        System.out.println("Color: " + color );
+        
     }
 }

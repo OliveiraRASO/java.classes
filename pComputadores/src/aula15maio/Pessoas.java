@@ -48,16 +48,20 @@ public class Pessoas {
                     break;
                 case 3:
                     for(int i=0; i<v.length; i++){
-                        System.out.println(v[i].setNome(leia.nextLine()));
-                        System.out.println(v[i].setMorada(leia.nextLine()));
-                        System.out.println(v[i].setIdade(leia.nextInt()));
-                        System.out.println(v[i].setNif(leia.nextInt()));
+                        System.out.println("Digite o nome: ");
+                        v[i].setNome(leia.nextLine());
+                        System.out.println("Digite a morada: ");
+                        v[i].setMorada(leia.nextLine());
+                        System.out.println("Digite a idade: ");
+                        v[i].setIdade(leia.nextInt());
+                        System.out.println("Digite o NIF: ");
+                        v[i].setNif(leia.nextInt());
                     }
                     break;
                 case 4:
-                    for(int i=0; i<v.length; i++){
-                        System.out.println(v[i].setNacionalidade(leia.nextLine()));
-                    }
+//                    for(int i=0; i<v.length; i++){
+//                        System.out.println(v[i].setNacionalidade(leia.nextLine()));
+//                    }
                     break;
                 case 5:
                     if(v[0].getIdade() > v[1].getIdade()){
