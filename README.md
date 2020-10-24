@@ -7,6 +7,7 @@
  much more...
  
  // update 20/04/2020
- more .classes added
+ * more .classes added
  
- // update with new methods of complexity tests
+ // update 24/10/2020
+ * with new methods of complexity tests
