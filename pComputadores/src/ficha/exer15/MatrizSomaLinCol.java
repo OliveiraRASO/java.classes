@@ -8,11 +8,11 @@ public class MatrizSomaLinCol {
 
         Scanner leia = new Scanner(System.in);
         Random random = new Random();
-        
+
         int [][]matriz = new int[3][3];
         int soma_linha = 0;
         int soma_coluna = 0;
-        
+
         //leitura valores p/ matriz aleatória
         for(int i=0; i<matriz.length; i++){
             for(int j=0; j<matriz[i].length; j++){
@@ -20,7 +20,7 @@ public class MatrizSomaLinCol {
                 matriz[i][j] = random.nextInt(10);
             }
         }
-        
+
         for(int i=0; i<matriz.length; i++){
             for(int j=0; j<matriz.length; j++){
                 soma_linha += matriz[i][j];
@@ -35,7 +35,7 @@ public class MatrizSomaLinCol {
                 System.out.print(matriz[i][j] + " ");
             }
         }
-        
+
         System.out.println("\nSoma linha: " + soma_linha);
         System.out.println("Soma coluna: " + soma_coluna);
     }
