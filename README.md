@@ -11,5 +11,6 @@
  
  // update 24/10/2020
  * with new methods of complexity tests
- notation O(n^2), log O(log n) and O(n
+ notation O(n^2), log O(log n) and O(n)
+ Bubble sort, Insertion Sort, Linterpolation search and linear search
  
